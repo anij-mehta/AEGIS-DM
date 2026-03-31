@@ -1,0 +1,44 @@
+{
+  "classes": {
+    "Fighter": {"hp": 30, "ac": 16, "speed": 6, "primary_stat": "STR"},
+    "Wizard": {"hp": 16, "ac": 12, "speed": 6, "primary_stat": "INT"},
+    "Cleric": {"hp": 22, "ac": 18, "speed": 5, "primary_stat": "WIS"},
+    "Rogue": {"hp": 20, "ac": 15, "speed": 7, "primary_stat": "DEX"},
+    "Paladin": {"hp": 28, "ac": 19, "speed": 5, "primary_stat": "CHA"},
+    "Barbarian": {"hp": 35, "ac": 14, "speed": 8, "primary_stat": "STR"},
+    "Ranger": {"hp": 24, "ac": 16, "speed": 7, "primary_stat": "DEX"},
+    "Warlock": {"hp": 20, "ac": 14, "speed": 6, "primary_stat": "CHA"}
+  },
+  "monsters": {
+    "Skeleton": {"hp": 12, "ac": 13, "type": "Undead", "resistances": ["Poison"]},
+    "Zombie": {"hp": 22, "ac": 8, "type": "Undead", "weaknesses": ["Radiant"]},
+    "Red_Dragon_Wyrmling": {"hp": 45, "ac": 17, "type": "Dragon", "immunities": ["Fire"]},
+    "Ice_Mephit": {"hp": 21, "ac": 11, "type": "Elemental", "weaknesses": ["Fire"]}
+  },
+  "weapons": {
+    "Longsword": {"damage": "1d8", "type": "Slashing"},
+    "Shortbow": {"damage": "1d6", "type": "Piercing", "range": 80},
+    "Greataxe": {"damage": "1d12", "type": "Slashing"},
+    "Warhammer": {"damage": "1d8", "type": "Bludgeoning"},
+    "Dagger": {"damage": "1d4", "type": "Piercing"},
+    "Quarterstaff": {"damage": "1d6", "type": "Bludgeoning"},
+    "Rapier": {"damage": "1d8", "type": "Piercing"},
+    "Maul": {"damage": "2d6", "type": "Bludgeoning"}
+  },
+  "spells": {
+    "Fireball": {"damage": "8d6", "element": "Fire", "area": 3},
+    "Ice_Knife": {"damage": "1d10", "element": "Cold", "range": 12},
+    "Guiding_Bolt": {"damage": "4d6", "element": "Radiant", "range": 24},
+    "Eldritch_Blast": {"damage": "1d10", "element": "Force", "range": 24},
+    "Cure_Wounds": {"healing": "1d8", "element": "Life", "range": 1},
+    "Inflict_Wounds": {"damage": "3d10", "element": "Necrotic", "range": 1},
+    "Lightning_Bolt": {"damage": "8d6", "element": "Lightning", "area": 10},
+    "Acid_Splash": {"damage": "1d6", "element": "Acid", "area": 1}
+  },
+  "environmental_hazards": {
+    "Lava": {"damage": "2d10", "element": "Fire"},
+    "Poison_Gas": {"damage": "1d6", "element": "Poison"},
+    "Spikes": {"damage": "1d4", "element": "Piercing"},
+    "Falling_Rocks": {"damage": "2d6", "element": "Bludgeoning"}
+  }
+}
